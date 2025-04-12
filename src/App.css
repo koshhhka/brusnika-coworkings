@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Grtsk Exa Regular';
+    src: url('./assets/fonts/Grtsk-Exa-Regular-Cyrillic-Latin-ekaterina_deryushkina.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Grtsk Exa Semibold';
+    src: url('./assets/fonts/Grtsk-Exa-Semibold-Cyrillic-Latin-ekaterina_deryushkina.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}

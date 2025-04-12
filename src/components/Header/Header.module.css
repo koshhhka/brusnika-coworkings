@@ -1,0 +1,38 @@
+.appHeader {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.notifications {
+    margin-left: auto;
+    background-image: url("/src/assets/IconRing.svg");
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.account {
+    background-image: url("/src/assets/UserAccount.png");
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.back {
+    background-image: url("/src/assets/back.svg");
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

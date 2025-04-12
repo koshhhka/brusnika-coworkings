@@ -1,0 +1,99 @@
+.container {
+    display: grid;
+    justify-items: center;
+}
+
+.currentBookings {
+    display: grid;
+    justify-items: center;
+}
+
+.currentBookings {
+    padding: 20px 0;
+    font-family: 'Grtsk Exa Regular', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F3F4;
+    border: 1px solid #7A7A7A;
+    border-radius: 10px;
+    row-gap: 10px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.currentBooking {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.currentBooking:not(:last-child) {
+    border-bottom: 1px solid #7A7A7A;
+}
+
+.topicContainer {
+    position: relative;
+    top: 35px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 45%;
+    height: 60%;
+    font-family: 'Grtsk Exa Semibold', sans-serif;
+    background-color: #000000;
+    border-radius: 20px;
+    color: white;
+}
+
+.coworkImg {
+    width: 48px;
+    height: 48px;
+}
+
+.qrCircle {
+    width: 42px;
+    height: 42px;
+}
+
+.date {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.adress {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.showMore {
+    border: 1px solid #000000;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 5px 8px;
+}
+
+.book {
+    margin-top: 30px;
+    border-radius: 8px;
+    font-family: 'Grtsk Exa Semibold', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #EF3D24;
+    border: none;
+    padding: 15px 3rem;
+}
+
+.history {
+    margin-top: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: none;
+    padding: 15px 2.5rem;
+}
+
+.logo {
+    margin-top: 50px;
+}
