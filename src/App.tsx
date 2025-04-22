@@ -1,13 +1,20 @@
 import './App.css'
-import Header from "./components/Header/Header.tsx";
-import Body from "./components/Body/Body.tsx";
+import {Routes, Route} from 'react-router-dom'
+import Menu from "./pages/Menu/Menu.tsx"
+import Registration from "./pages/Registration/Registration.tsx";
+import Notifications from "./pages/Notifications/Notifications.tsx";
+import Date from "./pages/Date/Date.tsx"
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Body />
+      <Routes>
+          <Route path="/menu" element={<Menu />}></Route>
+          <Route path="/reg" element={<Registration />}></Route>
+          <Route path="/notify" element={<Notifications />}></Route>
+          <Route path="/date" element={<Date />}></Route>
+      </Routes>
     </>
   )
 }

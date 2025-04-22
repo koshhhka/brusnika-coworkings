@@ -73,7 +73,7 @@
     padding: 5px 8px;
 }
 
-.book {
+.redButton {
     margin-top: 30px;
     border-radius: 8px;
     font-family: 'Grtsk Exa Semibold', sans-serif;
@@ -84,7 +84,7 @@
     padding: 15px 3rem;
 }
 
-.history {
+.blackButton {
     margin-top: 15px;
     border-radius: 8px;
     font-size: 20px;

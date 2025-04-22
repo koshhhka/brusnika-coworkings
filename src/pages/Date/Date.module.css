@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.title {
+    margin-bottom: 24px;
+}
+
+.monthAndYear {
+    font-family: "Grtsk Exa Semibold", serif;
+    margin-bottom: 8px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    width: 70%;
+    padding: 12px 30px 28px 30px;
+    margin-bottom: 36px;
+}
+
+.title2 {
+    margin-bottom:8px;
+}
+
+.text {
+    width: 70%;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Grtsk Exa Regular", serif;
+    color: #4D515A;
+    margin-bottom: 24px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+
+.input {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Grtsk Exa Regular", sans-serif;
+    width: 70%;
+}
+
+.addFriend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.buttonText {
+    font-family: "Grtsk Exa Regular", serif;
+    font-size: 16px;
+    width: 70%;
+}

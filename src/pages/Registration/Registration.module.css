@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    margin-top: 143px;
+    margin-bottom: 89px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.authorization {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.input {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Grtsk Exa Regular", sans-serif;
+}
+
+.inputTitle {
+    font-family: "Grtsk Exa Semibold", sans-serif;
+    color: #4D515A;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.redButton {
+    margin-top: 30px;
+    border-radius: 8px;
+    font-family: 'Grtsk Exa Semibold', sans-serif;
+    font-size: 20px;
+    width: 90%;
+    color: #FFFFFF;
+    background-color: #EF3D24;
+    border: none;
+    padding: 15px 3rem;
+}
+
+.blackButton {
+    margin-top: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 83%;
+    background-color: #000000;
+    border: none;
+    padding: 15px 2.5rem;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
