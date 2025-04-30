@@ -1,6 +1,6 @@
 import styles from './Date.module.css';
 import Header from "../../components/Header/Header.tsx";
-import Calendar from "react-calendar";
+import Calendar from "../../components/Calendar/Calendar.tsx";
 
 export default function Date () {
     return (
@@ -8,13 +8,12 @@ export default function Date () {
             <Header />
             <form className={styles.container}>
                 <h2 className={styles.title}> Выберите удобный день </h2>
-                <div className={styles.date}>
-                    <span className={styles.monthAndYear}> Январь 2025 </span>
-                    <Calendar />
-                    {/*<div className={styles.calendar}>*/}
-                    {/*    так, ну здесь у нас будет календарь, но не сейчас хахаха*/}
-                    {/*</div>*/}
+                <div>
+
+
                 </div>
+
+                <Calendar />
 
                 <h2 className={styles.title2}>Введите почты друзей</h2>
                 <span className={styles.text}>Если хотите поработать с друзьями — укажите их почты, мы отправим им QR-коды для входа</span>

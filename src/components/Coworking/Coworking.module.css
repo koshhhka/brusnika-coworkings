@@ -1,0 +1,71 @@
+.container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    border-radius: 1rem;
+    height: fit-content;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+}
+
+.imageWrapper {
+    z-index: -1;
+    position: absolute;
+}
+
+.imageWrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 1) 60%
+    );
+    pointer-events: none;
+}
+
+.coworkImage {
+    object-fit: cover;
+    display: block;
+}
+
+.date {
+    margin-top: 8px;
+    margin-left: 8px;
+    font-family: 'Grtsk Exa Regular', sans-serif;
+    display: flex;
+    width: fit-content;
+    color: #558B2F;
+    background-color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+.name {
+    margin-top: 114px;
+    margin-left: 16px;
+    font-family: 'Grtsk Exa Semibold', sans-serif;
+    font-size: 24px;
+}
+
+.geoContainer {
+    margin-top: 2px;
+    margin-left: 16px;
+    width: fit-content;
+    color: #7A7A7A;
+    font-family: 'Grtsk Exa Regular', sans-serif;
+}
+
+.whiteButton {
+    margin: 18px 16px 16px;
+    border-radius: 8px;
+    font-family: 'Grtsk Exa Semibold', sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    padding: 15px 3rem;
+}
