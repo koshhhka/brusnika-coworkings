@@ -4,7 +4,7 @@ export default function Coworking() {
     return (
         <div className={styles.container}>
             <div className={styles.imageWrapper}>
-                <img src="/src/assets/stockCowork1.jpg" className={styles.coworkImage}/>
+                <img src="/images/stockCowork1.jpg" className={styles.coworkImage}/>
             </div>
 
             <div className={styles.date}>

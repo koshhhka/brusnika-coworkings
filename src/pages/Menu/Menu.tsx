@@ -1,6 +1,10 @@
 import styles from './Menu.module.css'
 import Header from "../../components/Header/Header.tsx";
+import { useNavigate } from "react-router-dom";
+
 export default function Menu() {
+    const navigate = useNavigate();
+
     return (
         <>
             <Header />
@@ -40,16 +44,16 @@ export default function Menu() {
                         <img src="/src/assets/qrCircle.png" alt="qrCircle" className={styles.qrCircle} />
                     </div>
 
-                    <button className={styles.showMore}>
+                    <button onClick={() => navigate("/currentBooking")} className={styles.showMore}>
                         Показать ещё →
                     </button>
                 </div>
 
-                <button className={styles.redButton}>
+                <button onClick={() => navigate("/date")} className={styles.redButton}>
                     Забронировать коворкинг
                 </button>
 
-                <button className={styles.blackButton}>
+                <button onClick={() => navigate("/bookingHistory")} className={styles.blackButton}>
                     История бронирований
                 </button>
             </div>

@@ -82,3 +82,15 @@
     font-size: 16px;
     width: 70%;
 }
+
+.redButton {
+    margin-top: 30px;
+    border-radius: 8px;
+    font-family: 'Grtsk Exa Semibold', sans-serif;
+    font-size: 20px;
+    width: 90%;
+    color: #FFFFFF;
+    background-color: #EF3D24;
+    border: none;
+    padding: 15px 3rem;
+}

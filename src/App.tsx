@@ -7,6 +7,7 @@ import Date from "./pages/Date/Date.tsx"
 import ChooseCoworking from "./pages/ChooseCoworking/ChooseCoworking.tsx";
 import CurrentBookings from "./pages/CurentBookings/CurrentBookings.tsx";
 import  BookingHistory from "./pages/BookingHistory/BookingHistory.tsx";
+import Authorisation from "./pages/Authorisation/Authorisation.tsx";
 
 function App() {
 
@@ -14,12 +15,13 @@ function App() {
     <>
       <Routes>
           <Route path="/menu" element={<Menu />}></Route>
+          <Route path="/authorisation" element={<Authorisation />}></Route>
           <Route path="/registration" element={<Registration />}></Route>
           <Route path="/notifications" element={<Notifications />}></Route>
           <Route path="/date" element={<Date />}></Route>
           <Route path="/chooseCoworking" element={<ChooseCoworking />}></Route>
           <Route path="/currentBooking" element={<CurrentBookings />}></Route>
-          <Route path="/bookingHistory" element={<BookingHistory/>}></Route>
+          <Route path="/bookingHistory" element={<BookingHistory />}></Route>
       </Routes>
     </>
   )
