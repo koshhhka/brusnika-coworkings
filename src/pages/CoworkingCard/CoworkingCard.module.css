@@ -1,0 +1,96 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 17px;
+}
+
+.image {
+    padding-top: 16px;
+    width: 100%;
+    display: block;
+    mask-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            white 10%,
+            white 90%,
+            transparent 100%
+    );
+}
+
+.title {
+    font-family: 'Grtsk Tera Bold', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.adressContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6px;
+}
+
+.address {
+    font-size: 18px;
+    color: black;
+    margin-left: 5px;
+
+}
+
+.description {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.isFree {
+    font-family: 'Grtsk Exa Regular', sans-serif;
+    display: flex;
+    width: fit-content;
+    color: #558B2F;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+
+.categories {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.category {
+    font-family: 'Grtsk Exa Regular', sans-serif;
+    background-color: #D9D9D9;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.green {
+    color: #689F38;
+}
+
+.red {
+    color: #EF3D24;
+}
+
+.redButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 30px;
+    border-radius: 8px;
+    font-family: 'Grtsk Exa Semibold', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #EF3D24;
+    padding: 15px 0;
+    /*position: fixed;*/
+    /*bottom: 30px;*/
+}

@@ -8,6 +8,8 @@ import ChooseCoworking from "./pages/ChooseCoworking/ChooseCoworking.tsx";
 import CurrentBookings from "./pages/CurentBookings/CurrentBookings.tsx";
 import  BookingHistory from "./pages/BookingHistory/BookingHistory.tsx";
 import Authorisation from "./pages/Authorisation/Authorisation.tsx";
+import CoworkingCard from "./pages/CoworkingCard/CoworkingCard.tsx";
+import Time from "./pages/Time/Time.tsx"
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
           <Route path="/chooseCoworking" element={<ChooseCoworking />}></Route>
           <Route path="/currentBooking" element={<CurrentBookings />}></Route>
           <Route path="/bookingHistory" element={<BookingHistory />}></Route>
+          <Route path="/coworkingCard/:id" element={<CoworkingCard />}></Route>
+          <Route path="/time" element={<Time />}></Route>
       </Routes>
     </>
   )

@@ -2,21 +2,26 @@ import styles from './Date.module.css';
 import Header from "../../components/Header/Header.tsx";
 import Calendar from "../../components/Calendar/Calendar.tsx";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { v4 } from 'uuid';
 
 export default function Date() {
-    const navigate = useNavigate();
-    const [emailFields, setEmailFields] = useState([{ id: 1, value: '' }]);
+    const [emailFields, setEmailFields] = useState([{ id: v4(), value: '' }]);
 
     const addEmailField = () => {
-        const newId = emailFields.length > 0 ? Math.max(...emailFields.map(field => field.id)) + 1 : 1;
-        setEmailFields([...emailFields, { id: newId, value: '' }]);
+        setEmailFields(prev => [...prev, {
+            id: v4(),
+            value: ''
+        }]);
     };
 
-    const handleEmailChange = (id: number, value: string) => {
-        setEmailFields(emailFields.map(field =>
-            field.id === id ? { ...field, value } : field
-        ));
+    const removeEmailField = (id: string) => {
+        setEmailFields(prev => prev.filter(email => email.id !== id));
+    }
+
+    const handleEmailChange = (id: string, value: string) => {
+        setEmailFields(prev => prev.map(email =>
+            email.id === id ? { ...email, value } : email));
     };
 
     return (
@@ -33,29 +38,34 @@ export default function Date() {
 
                 <div className={styles.inputContainer}>
                     {emailFields.map((field) => (
-                        <input
-                            key={field.id}
-                            type="email"
-                            placeholder="friend@example.com"
-                            className={styles.input}
-                            value={field.value}
-                            onChange={(e) => handleEmailChange(field.id, e.target.value)}
-                        />
+                        <div className={styles.inputField} key={field.id}>
+                            <input
+                                type="email"
+                                placeholder="friend@example.com"
+                                className={styles.input}
+                                value={field.value}
+                                onChange={(e) => handleEmailChange(field.id, e.target.value)}
+                            />
+                            <button type="button" className={styles.removeFriend} onClick={() => removeEmailField(field.id)}>
+                            </button>
+                        </div>
                     ))}
                 </div>
 
-                <button
-                    type="button"
-                    className={styles.addFriend}
-                    onClick={addEmailField}
-                >
-                    <img src="/src/assets/addFriend.svg" className={styles.image}/>
-                    <span className={styles.buttonText}>Добавить друга</span>
-                </button>
+                <div className={styles.buttonContainer}>
+                    <button
+                        type="button"
+                        className={styles.addFriend}
+                        onClick={addEmailField}
+                    >
+                        <img src="/src/assets/addFriend.svg" className={styles.image}/>
+                        <span className={styles.buttonText}>Добавить друга</span>
+                    </button>
+                </div>
 
-                <button onClick={() => navigate("/chooseCoworking")} className={styles.redButton}>
-                    Забронировать коворкинг
-                </button>
+                <Link className={styles.redButton} to={'/chooseCoworking'}>
+                    <span> Забронировать коворкинг </span>
+                </Link>
             </form>
         </>
     );

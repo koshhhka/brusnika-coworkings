@@ -21,7 +21,7 @@
 
 
 @font-face {
-    font-family: "Grtsk Mega Bold";
+    font-family: 'Grtsk Mega Bold';
     src: url('./assets/fonts/Grtsk-Mega-Bold-Cyrillic-Latin-ekaterina_deryushkina.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
@@ -41,9 +41,20 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'Grtsk Tera Bold';
+    src: url('./assets/fonts/Grtsk-Tera-Bold-Cyrillic-Latin-ekaterina_deryushkina.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
 h2 {
-    font-family: "Grtsk Tera Semibold", sans-serif;
+    font-family: 'Grtsk Tera Semibold', sans-serif;
     justify-self: center;
     font-size: 20px;
+    margin: 0;
+}
+
+body {
     margin: 0;
 }

@@ -56,7 +56,7 @@
     border-radius: 4px;
     font-size: 16px;
     font-family: "Grtsk Exa Regular", sans-serif;
-    width: 70%;
+    width: 100%;
     padding: 2px 8px;
 }
 
@@ -69,6 +69,25 @@
     border: none;
     padding: 0;
     background-color: transparent;
+}
+
+.inputField {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    width: 70%;
+}
+
+.removeFriend {
+    background-image: url("/src/assets/removeFriend.svg");
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    right: -10px;
+    top: -10px;
+    z-index: 2;
 }
 
 .image {
@@ -84,13 +103,19 @@
 }
 
 .redButton {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     margin-top: 30px;
     border-radius: 8px;
     font-family: 'Grtsk Exa Semibold', sans-serif;
     font-size: 20px;
-    width: 90%;
     color: #FFFFFF;
     background-color: #EF3D24;
-    border: none;
-    padding: 15px 3rem;
+    padding: 19px 3rem;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
 }
