@@ -4,3 +4,84 @@
     align-items: center;
     margin-top: 16px;
 }
+
+.select {
+    background-color: #F5F5F5;
+    border: none;
+    width: 84px;
+    height: 36px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Grtsk Exa Regular", sans-serif;
+}
+
+.time {
+    font-size: 16px;
+    font-family: "Grtsk Exa Regular", sans-serif;
+}
+
+.date {
+    margin-top: 16px;
+}
+
+.chooseTime {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+
+.text {
+    font-size: 16px;
+    font-family: "Grtsk Tera Semibold", sans-serif;
+}
+
+.from {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.to {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.choosePlaces {
+    background-image: url("/src/assets/Cowork.png");
+    width: 380px;
+    height: 248px;
+    margin-top: 72px;
+}
+
+.settings {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.less {
+    background-image: url("/src/assets/Less.svg");
+    width: 57px;
+    height: 57px;
+    border: none;
+    background-color: transparent;
+}
+
+.more {
+    background-image: url("/src/assets/More.svg");
+    width: 57px;
+    height: 57px;
+    border: none;
+    background-color: transparent;
+}
+
+.place {
+    background-image: url("/src/assets/freePlace1.svg");
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-color: transparent;
+}
